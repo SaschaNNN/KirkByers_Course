@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import sys
-import IPCheck
+import IPCheck_ext
 
 if len(sys.argv) != 2: #выдаём ошибку, если аргументов больше одного или наоборот нет
     print('Give AN argument!')
@@ -9,7 +9,7 @@ if len(sys.argv) != 2: #выдаём ошибку, если аргументов
 
 
 ip_addr = sys.argv.pop()
-IPCheck.IP_check(ip_addr)
+IPCheck_ext.IP_check(ip_addr)
 octets = ip_addr.split('.')
 
 i=0

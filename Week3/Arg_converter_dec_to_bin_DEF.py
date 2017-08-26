@@ -39,7 +39,7 @@ if len(sys.argv) != 2: #выдаём ошибку, если аргументов
 
 
 ip_addr = sys.argv.pop()
-
+IP_check(ip_addr)
 octets = ip_addr.split('.')
 
 i=0
